@@ -1,0 +1,14 @@
+// Code for sum of digits
+#include <iostream>
+using namespace std;
+
+int main() {
+    int result = 0,num,i;
+    cout << "enter:";
+    cin >> num;
+    for(i=num;i!=0;i = i/10){
+    result = result + (i % 10);
+  }
+    cout << result;
+    return 0;
+}
