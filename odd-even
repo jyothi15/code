@@ -1,0 +1,18 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int result,num;
+    cout << "enter:";
+    cin >> num;
+    result = (num % 2);
+    if(result == 0){
+    cout << num << " = even";
+    }
+    else {
+        cout << num << " = odd";
+    }
+
+    return 0;
+}
