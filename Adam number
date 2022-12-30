@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int result,rev = 0,rev1 = 0,num,i,sqr,temp,sqrr,temp1;
+    cout << "enter:";
+    cin >> num;
+    
+    sqr = num * num;
+    for(i=sqr;i!=0;i = i/10){
+    temp = (i % 10);
+    rev = rev * 10 + temp ;
+    }
+  
+    sqrr = sqrt(rev);
+    
+    for(i=sqrr;i!=0;i = i/10){
+    temp1 = (i % 10);
+    rev1 = rev1 * 10 + temp1 ;
+    }
+    
+    if(rev1 == num){
+        cout << "Adam number";
+        
+    }else 
+    {
+        cout << "not Adam number";
+    }
+    
+    return 0;
+}
