@@ -1,0 +1,30 @@
+int main(){
+    unsigned long long int t,j;
+    cin >> t;
+    for(int j= 0; j < t; j++){
+        unsigned long long int n;
+        double S1, S2, S3,sum1=0,sum2=0,sum3=0,sum=0,m;
+        cin >> n;
+        m = (n)/3;
+        S1 = m * (m + 1) / 2;
+        sum1 = 3 * S1;
+        cout << sum1;
+        
+        m = (n)/5;
+        S2 = m * (m + 1) / 2;
+        sum2 = 5 * S2;
+        cout << sum2;
+        
+        
+        m = (n)/15;
+        S3 = m * (m + 1) / 2;
+        sum3 = 15 * S3;
+        cout << sum2;
+          
+        sum = (sum1 + sum2) - sum3;
+    
+        cout << sum ;
+        cout << "\n";
+    }
+    return 0;
+}
